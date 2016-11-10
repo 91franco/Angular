@@ -5,6 +5,8 @@ Aqui es donde crearemos las bases de datos
 Para importar el archivo personas.json tenemos que abrir otra consola desde esta ubicacion y ejecutar:
 mongoimport --db mibase --collection personas --jsonArray file personas.json
 
+mongoimport --db mibase --collection enron --file enron.json
+
 
 Abrir otra consola y correr: npm install mongo
 
