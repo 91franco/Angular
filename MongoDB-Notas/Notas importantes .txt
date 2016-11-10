@@ -44,4 +44,4 @@ Paso 4: ingresar el siguiente codigo:
 	//
 	 	db.countries.findOne({geometry:{$geoIntersects:{$geometry:{type:"Point",coordinates:[-58.36,-34.66]}}}},{"properties.name":1})
 
-		db.regions.find({geometry:{$near:{$geometry:{type:"Point",coordinates:[-3.81,43.47]},$maxDistance:250000}}})
+		db.regions.find({geometry:{$near:{$geometry:{type:"Point",coordinates:[-3.81,43.47]},$maxDistance:250000}}},{"properties.name":1})
